@@ -1,0 +1,99 @@
+:root {
+    --Yellow: hsl(47, 88%, 63%);
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 50%);
+    --Black: hsl(0, 0%, 7%);
+}
+
+@font-face {
+    font-family: myFontRegular;
+    src: url("./assets/fonts/static/Figtree-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: myFontBold;
+    src: url("./assets/fonts/static/Figtree-ExtraBold.ttf");
+}
+
+body {
+    background-color: var(--Yellow);
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    font-family: myFontRegular;
+    max-width: 320px;
+    background-color: var(--White);
+    border: 1px solid var(--Black);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 8px 8px;
+}
+
+.card:hover {
+    box-shadow: 15px 15px;
+}
+
+.card-image {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card-body button{
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-family: myFontBold;
+    background-color: var(--Yellow);
+    color: var(--Black);
+    font-weight: 500;
+    border-radius: 5px;
+    padding: 8px 14px;
+    border: none;
+}
+
+.date {
+    color: var(--Black);
+    font-size: 14px;
+}
+
+.description {
+    color: var(--Grey);
+    margin-top: 0px;
+    font-size: 16px;
+    font-weight: -500;
+}
+
+h3 {
+    color: var(--Black);
+    margin-top: 20px;
+    font-weight: 800;
+    font-style: 900;
+    font-family: myFontBold;
+    font-size: 22px;
+}
+
+h3:hover {
+    color: var(--Yellow);
+    cursor: pointer;
+}
+
+.card-footer {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    margin-bottom: 0;
+    font-family: myFontBold;
+}
+
+.card-footer img {
+    width: 30px;
+    height: 30px;
+    padding-right: 10px;
+}
+
